@@ -1,8 +1,14 @@
 # Homework 01 - Benchmarking - Due 09/12/2014 11:59pm
 
 1. __Benchmark a compute node on Janus using triad__
+	1. Load the module for this homework using the command:
+	   module load HPSC_CLASS2014/hw01
+           To see all the modules that are loaded use the command 'module list'
+           If you want to see all the modules available use the command 'module avail'
+           To unload a single module use the command 'unload module <module-name>'
+           To unload all loaded modules use the command 'module purge'
 
-	1. Use the triad makefile to build to code on a compile node:
+	2. Use the triad makefile to build to code on a compile node:
        `make`. Remember to compile it on one of the compile nodes,
        e.g. `janus-compile[1-4]`.
 	
@@ -16,7 +22,7 @@
 
 			Length:           10    MFLOP/s:    1728.43411262444 
 
-	2. Create a job script that
+	3. Create a job script that
 	
 		- Requests 1 node and 12 cores
 		- Executes  `triad.exe` for the following N values:
@@ -24,7 +30,7 @@
 				10, 50, 100, 500, 1e3, 5e3, 1e4, 5e4, 1e5, 5e5, 1e6, 5e6, 1e7, 5e7, 1e8, 5e8, 1e9
 
 
-	3. Create a comma separated file (`.csv`) named
+	4. Create a comma separated file (`.csv`) named
         `triad.csv`. Please do not put any spaces after the commas and
         include the header key,value. Your file should look similar
         to this:
@@ -35,7 +41,7 @@
 			100,3516.3370
 			...
 
-	4. Plot
+	5. Plot
 
         Use your favorite plotting language to make a `triad.png`. plot
         of your data. Please include correctly labeled x and y axis
