@@ -2,8 +2,10 @@
 
 1. __Benchmark a compute node on Janus using triad__
 	1. Load the module for this homework using the command:
+	
 	   module load HPSC_CLASS2014/hw01
-           To see all the modules that are loaded use the command 'module list'
+        
+	   To see all the modules that are loaded use the command 'module list'
            If you want to see all the modules available use the command 'module avail'
            To unload a single module use the command 'unload module <module-name>'
            To unload all loaded modules use the command 'module purge'
